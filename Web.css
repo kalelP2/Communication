@@ -1,88 +1,180 @@
-/* General */
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f9ff;
-    color:#333;
+/* Reset and general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-header{
-    background:#6ec6ff;
-    color:white;
-    padding:15px;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(IMG_7219.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
 }
 
-/* Navigation */
-nav a{
-    color:white;
-    margin:0 12px;
-    text-decoration:none;
-    font-weight:bold;
+/* Header Banner */
+.banner {
+  background-color: #000000;
+  color: #800090;
+  padding: 15px 20px;
+  text-align: left;
+  font-family: fantasy;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px #ffffff;
+  border-bottom: 3px solid #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
 
-nav a:hover{
-    color:#ff7a7a;
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #575757;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #800090;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* Container for sections */
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 30px auto;
+  width: 85%;
+  max-width: 900px;
+  border-radius: 10px;
+  border: 2px solid #800090;
+  box-shadow: 2px 8px 15px rgba(0,0,0,0.7);
 }
 
 /* Hero Section */
-.hero{
-    background:#6ec6ff;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px #800090;
 }
 
-.hero h1{
-    font-size:40px;
-    margin-bottom:10px;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-.hero p{
-    font-size:18px;
+.hero button {
+  background-color: #800090;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Button */
-button{
-    background:#ff7a7a;
-    border:none;
-    padding:12px 22px;
-    color:white;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:16px;
-    margin-top:15px;
+.hero button:hover {
+  background-color: #ffcc00;
+  color: #000000;
 }
 
-button:hover{
-    opacity:0.85;
+/* About Section */
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 /* Features Section */
-.features{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    padding:50px;
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-align: center;
 }
 
-.feature-box{
-    background:white;
-    border-radius:8px;
-    padding:25px;
-    width:220px;
-    text-align:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.info-section {
+  border: 2px solid #800090;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: rgba(67, 39, 99, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-box h3{
-    color:#6ec6ff;
+.info-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.7);
+}
+
+.info-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.info-section p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Links inside features */
+.info-section a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 /* Footer */
-footer{
-    background:#6ec6ff;
-    color:white;
-    text-align:center;
-    padding:20px;
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000;
+  color: #800090;
+  font-size: 1em;
+  border-top: 2px solid #800090;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .features h2 {
+    font-size: 1.8em;
+  }
 }
