@@ -1,56 +1,50 @@
+:root{
+    --main-color: #6ec6ff;      /* Light Blue */
+    --secondary-color: #ff7a7a; /* Soft Red */
+    --background-color: #f4f9ff;
+    --text-color: #333;
+}
+
 body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            padding:0;
-        }
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
 
-        header{
-            background:#333;
-            color:white;
-            padding:15px;
-        }
+/* Header */
+header{
+    background: var(--main-color);
+    color: white;
+    padding: 15px;
+}
 
-        nav a{
-            color:white;
-            margin:0 10px;
-            text-decoration:none;
-        }
+/* Navigation links */
+nav a{
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
 
-        .hero{
-            background:#f4f4f4;
-            padding:80px 20px;
-            text-align:center;
-        }
+/* Buttons */
+button{
+    background: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .features{
-            display:flex;
-            justify-content:center;
-            gap:20px;
-            padding:40px;
-        }
+/* Sections */
+section{
+    padding: 40px;
+}
 
-        .feature-box{
-            border:1px solid #ccc;
-            padding:20px;
-            width:200px;
-            text-align:center;
-        }
-
-        .about{
-            background:#eee;
-            padding:40px;
-            text-align:center;
-        }
-
-        footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        button{
-            padding:10px 20px;
-            margin-top:10px;
-            cursor:pointer;
-        }
+/* Footer */
+footer{
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
